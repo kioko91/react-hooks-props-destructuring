@@ -14,4 +14,15 @@ function App() {
   );
 }
 
+function SocialMedia({ socialLinks }) {
+  const { github, linkedin } = socialLinks;
+  
+  return (
+    <div>
+      <a href={socialLinks.github}>{socialLinks.github}</a>
+      <a href={socialLinks.linkedin}>{socialLinks.linkedin}</a>
+    </div>
+  );
+}
+
 export default App;
